@@ -16,6 +16,6 @@ library("dplyr")
 library("knitr")
 library("kableExtra")
 
-kable(covid_19_tr[6:20,2:8])
+kable(covid_19_tr[6:20,2:10])
 ```
 

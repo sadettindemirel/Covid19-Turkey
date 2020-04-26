@@ -61,6 +61,18 @@ iyilesme
 
 </th>
 
+<th style="text-align:right;">
+
+gunluk\_vefat
+
+</th>
+
+<th style="text-align:right;">
+
+gunluk\_vaka
+
+</th>
+
 </tr>
 
 </thead>
@@ -111,6 +123,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+NA
+
+</td>
+
+<td style="text-align:right;">
+
+51
+
+</td>
+
 </tr>
 
 <tr>
@@ -154,6 +178,18 @@ NA
 <td style="text-align:right;">
 
 NA
+
+</td>
+
+<td style="text-align:right;">
+
+1
+
+</td>
+
+<td style="text-align:right;">
+
+93
 
 </td>
 
@@ -203,6 +239,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+2
+
+</td>
+
+<td style="text-align:right;">
+
+168
+
+</td>
+
 </tr>
 
 <tr>
@@ -246,6 +294,18 @@ NA
 <td style="text-align:right;">
 
 NA
+
+</td>
+
+<td style="text-align:right;">
+
+5
+
+</td>
+
+<td style="text-align:right;">
+
+311
 
 </td>
 
@@ -295,6 +355,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+12
+
+</td>
+
+<td style="text-align:right;">
+
+277
+
+</td>
+
 </tr>
 
 <tr>
@@ -338,6 +410,18 @@ NA
 <td style="text-align:right;">
 
 NA
+
+</td>
+
+<td style="text-align:right;">
+
+9
+
+</td>
+
+<td style="text-align:right;">
+
+289
 
 </td>
 
@@ -387,6 +471,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+7
+
+</td>
+
+<td style="text-align:right;">
+
+293
+
+</td>
+
 </tr>
 
 <tr>
@@ -430,6 +526,18 @@ NA
 <td style="text-align:right;">
 
 NA
+
+</td>
+
+<td style="text-align:right;">
+
+7
+
+</td>
+
+<td style="text-align:right;">
+
+343
 
 </td>
 
@@ -479,6 +587,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+15
+
+</td>
+
+<td style="text-align:right;">
+
+561
+
+</td>
+
 </tr>
 
 <tr>
@@ -522,6 +642,18 @@ NA
 <td style="text-align:right;">
 
 NA
+
+</td>
+
+<td style="text-align:right;">
+
+16
+
+</td>
+
+<td style="text-align:right;">
+
+1196
 
 </td>
 
@@ -571,6 +703,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+17
+
+</td>
+
+<td style="text-align:right;">
+
+2069
+
+</td>
+
 </tr>
 
 <tr>
@@ -614,6 +758,18 @@ NA
 <td style="text-align:right;">
 
 70
+
+</td>
+
+<td style="text-align:right;">
+
+16
+
+</td>
+
+<td style="text-align:right;">
+
+1704
 
 </td>
 
@@ -663,6 +819,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+23
+
+</td>
+
+<td style="text-align:right;">
+
+1815
+
+</td>
+
 </tr>
 
 <tr>
@@ -709,6 +877,18 @@ NA
 
 </td>
 
+<td style="text-align:right;">
+
+37
+
+</td>
+
+<td style="text-align:right;">
+
+1610
+
+</td>
+
 </tr>
 
 <tr>
@@ -752,6 +932,18 @@ NA
 <td style="text-align:right;">
 
 243
+
+</td>
+
+<td style="text-align:right;">
+
+46
+
+</td>
+
+<td style="text-align:right;">
+
+2704
 
 </td>
 
