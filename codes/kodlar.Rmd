@@ -1,0 +1,47 @@
+---
+title: "COVID-19 Türkiye Verileri | COVID - 19 TURKEY DATA"
+author: "Sadettin Demirel"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+    theme: flatly
+---
+
+## Paketler ve Covid-19 Verisi
+
+```{r message=FALSE, warning=FALSE}
+library("dplyr")
+library("readr")
+library("lubridate")
+library("knitr")
+library("kableExtra")
+```
+
+Covid19 verisi Sağlık Bakanlığının [Covid19 takip sayfasından](https://covid19.saglik.gov.tr/)  alınmıştır. Açıklanan veriler aşağıdaki linkteki google tablolar dosyasında eklenmektedir. 
+
+```{r message=FALSE, warning=FALSE}
+covid19_tr <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBbQFvVMsqdny_UE6piuPtZTpyFkDjaVyxdnEGnumxJwaPNQcMfaR_ajZjhaxMmaewnqR6To_E-OCw/pub?gid=1874023437&single=true&output=csv")
+
+colnames(covid19_tr) <- c("100_vaka_sonrası_gun","tarih","test","vaka","vefat","yogun_bakim_hasta","entube_hasta","iyilesme","gunluk_vefat","gunluk_vaka","gunluk_test","gunluk_vefat_eksi","gunluk_iyilesme")
+
+head(covid19_tr)
+```
+
+
+## Verilerin Formatı
+
+Verileri **csv ve rds** formatında *data* klasöründen ulaşabilirsiniz.
+
+```{r}
+saveRDS(covid19_tr, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds")
+write_csv(covid19_tr, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.csv")
+```
+
+```{r}
+kable(covid19_tr[6:20,2:10])
+```
+
+
+

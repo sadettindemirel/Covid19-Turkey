@@ -1,0 +1,21 @@
+---
+title: "COVID-19 Türkiye Verileri | COVID-19 Turkey Data"
+output: github_document
+---
+
+* Covid19 verisi Sağlık Bakanlığının [Covid19 takip sayfasından](https://covid19.saglik.gov.tr/)  alınmıştır.
+* Verilere data klasöründen **CSV ve RDS** formatlarında ulaşabilirsiniz
+* Veriseti bünyesinde bulunduğum **[Veri Okuryazarlığı Derneği](https://twitter.com/voydorg)** tarafından derlenmiştir.
+* Ayrıca derlenen veri ile **[Koronavirüs Takip Sayfası](https://veribulteni.voyd.org.tr/koronavirus-takip/)** oluşturulmuştur
+* Verisetinde kümülatif ve günlük vaka, vefat ve iyileşme sayılarının dahil olduğu 13 değişken yer almaktadır.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+covid_19_tr <- readRDS("C:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds")
+library("dplyr")
+library("knitr")
+library("kableExtra")
+
+kable(covid_19_tr[6:20,2:8])
+```
+
