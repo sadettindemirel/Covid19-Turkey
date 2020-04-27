@@ -40,7 +40,7 @@ write_csv(covid19_tr, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.
 ```
 
 ```{r}
-kable(covid19_tr[6:20,2:10])
+kable(tail(covid19_tr[,2:10],15))
 ```
 
 
