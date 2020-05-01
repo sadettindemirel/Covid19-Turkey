@@ -11,11 +11,81 @@ output: github_document
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-covid_19_tr <- readRDS("C:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds")
 library("dplyr")
 library("knitr")
 library("kableExtra")
+library("ggplot2")
+library("lubridate")
+library("extrafont")
 
-kable(covid_19_tr[6:20,2:10])
+#sistem
+Sys.setlocale("LC_CTYPE", "turkish")
+
+#veriseti
+covid_19_tr <- readRDS("C:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds") %>%
+  mutate(tarih1 = dmy(tarih)) 
+#font
+windowsFonts("Poppins" = windowsFont("Poppins"))
+extrafont::loadfonts(device = "win")
+
+#tema
+theme_custom2 <- function() {
+  theme_minimal() +
+    theme(
+      text = element_text(family = "Poppins", color = "gray25"),
+      plot.title = element_text(face = "bold",size = 14),
+      plot.subtitle = element_text(size = 13),
+      axis.text.x= element_text(size=11),
+      axis.text.y = element_text(size=11),
+      plot.caption = element_text(size = 11, color = "gray30"),
+      plot.background = element_rect(fill = "#f6f5f5"),
+      legend.position = "none",
+      strip.background = element_rect(colour = "#d9d9d9", fill = "#d9d9d9"),
+      strip.text.x = element_text(size = 11, colour = "gray25", face = "bold"))
+  
+}
 ```
+
+#### 100 Vaka sonrası günlük vefat sayısı
+```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
+covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   ggplot(aes(tarih1, gunluk_vefat))+
+  geom_col()+
+  scale_x_date(date_breaks = "5 days", date_labels = "%b %d")+
+  scale_y_continuous(breaks = c(1,25,50,75,100,125))+
+  labs(title="Türkiye Genelinde Günlük Covid-19 Vefat Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()
+```
+
+#### 100 Vaka sonrası günlük vaka sayısı
+```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
+covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   ggplot(aes(tarih1, gunluk_vaka, fill ="#e34a33"))+
+  geom_col()+
+  scale_x_date(date_breaks = "5 days", date_labels = "%b %d")+
+  labs(title="Türkiye Genelinde Günlük Covid-19 Vaka Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()
+```
+
+#### Vaka, Vefat ve İyileşme (Case, Death and Recovery)
+
+Aşağıdaki tablo verideki bazı değişkenleri ve son 20 günün verilerini göstermektedir.
+
+```{r echo=FALSE}
+kable(tail(covid_19_tr[,2:10],20))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
