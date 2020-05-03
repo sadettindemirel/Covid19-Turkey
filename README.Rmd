@@ -70,22 +70,3 @@ Aşağıdaki tablo verideki bazı değişkenleri ve son 20 günün verilerini g�
 ```{r echo=FALSE}
 kable(tail(covid_19_tr[,2:10],20))
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
