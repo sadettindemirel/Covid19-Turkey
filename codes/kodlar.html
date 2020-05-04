@@ -382,7 +382,7 @@ summary {
 
 <h1 class="title toc-ignore">COVID-19 Türkiye Verileri | COVID - 19 TURKEY DATA</h1>
 <h4 class="author">Sadettin Demirel</h4>
-<h4 class="date">26 April, 2020</h4>
+<h4 class="date">04 May, 2020</h4>
 
 </div>
 
@@ -424,7 +424,7 @@ head(covid19_tr)</code></pre>
 <p>Verileri <strong>csv ve rds</strong> formatında <em>data</em> klasöründen ulaşabilirsiniz.</p>
 <pre class="r"><code>saveRDS(covid19_tr, &quot;c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds&quot;)
 write_csv(covid19_tr, &quot;c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.csv&quot;)</code></pre>
-<pre class="r"><code>kable(covid19_tr[6:20,2:10])</code></pre>
+<pre class="r"><code>kable(tail(covid19_tr[,2:10],15))</code></pre>
 <table>
 <thead>
 <tr>
@@ -460,437 +460,437 @@ gunluk_vaka
 <tbody>
 <tr>
 <td style="text-align:left;">
-17.03.2020
+19.04.2020
 </td>
 <td style="text-align:right;">
-NA
+634277
 </td>
 <td style="text-align:right;">
-98
+86306
 </td>
 <td style="text-align:right;">
-1
+2017
 </td>
 <td style="text-align:right;">
-NA
+1922
 </td>
 <td style="text-align:right;">
-NA
+1031
 </td>
 <td style="text-align:right;">
-NA
+11976
 </td>
 <td style="text-align:right;">
-NA
+127
 </td>
 <td style="text-align:right;">
-51
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-18.03.2020
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-191
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-93
+3977
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-19.03.2020
+20.04.2020
 </td>
 <td style="text-align:right;">
-NA
+673980
 </td>
 <td style="text-align:right;">
-359
+90980
 </td>
 <td style="text-align:right;">
-4
+2140
 </td>
 <td style="text-align:right;">
-NA
+1909
 </td>
 <td style="text-align:right;">
-NA
+1033
 </td>
 <td style="text-align:right;">
-NA
+13430
 </td>
 <td style="text-align:right;">
-2
+123
 </td>
 <td style="text-align:right;">
-168
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-20.03.2020
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-670
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-311
+4674
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-21.03.2020
+21.04.2020
 </td>
 <td style="text-align:right;">
-NA
+713409
 </td>
 <td style="text-align:right;">
-947
+95591
 </td>
 <td style="text-align:right;">
-21
+2259
 </td>
 <td style="text-align:right;">
-NA
+1865
 </td>
 <td style="text-align:right;">
-NA
+1006
 </td>
 <td style="text-align:right;">
-NA
+14918
 </td>
 <td style="text-align:right;">
-12
+119
 </td>
 <td style="text-align:right;">
-277
+4611
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-22.03.2020
+22.04.2020
 </td>
 <td style="text-align:right;">
-NA
+750944
 </td>
 <td style="text-align:right;">
-1236
+98674
 </td>
 <td style="text-align:right;">
-30
+2376
 </td>
 <td style="text-align:right;">
-NA
+1814
 </td>
 <td style="text-align:right;">
-NA
+985
 </td>
 <td style="text-align:right;">
-NA
+16477
 </td>
 <td style="text-align:right;">
-9
+117
 </td>
 <td style="text-align:right;">
-289
+3083
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-23.03.2020
+23.04.2020
 </td>
 <td style="text-align:right;">
-NA
+791906
 </td>
 <td style="text-align:right;">
-1529
+101790
 </td>
 <td style="text-align:right;">
-37
+2491
 </td>
 <td style="text-align:right;">
-NA
+1816
 </td>
 <td style="text-align:right;">
-NA
+982
 </td>
 <td style="text-align:right;">
-NA
+18491
 </td>
 <td style="text-align:right;">
-7
+115
 </td>
 <td style="text-align:right;">
-293
+3116
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-24.03.2020
+24.04.2020
 </td>
 <td style="text-align:right;">
-NA
+830257
 </td>
 <td style="text-align:right;">
-1872
+104912
 </td>
 <td style="text-align:right;">
-44
+2600
 </td>
 <td style="text-align:right;">
-NA
+1790
 </td>
 <td style="text-align:right;">
-NA
+929
 </td>
 <td style="text-align:right;">
-NA
+21737
 </td>
 <td style="text-align:right;">
-7
+109
 </td>
 <td style="text-align:right;">
-343
+3122
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-25.03.2020
+25.04.2020
 </td>
 <td style="text-align:right;">
-5035
+868565
 </td>
 <td style="text-align:right;">
-2433
+107773
 </td>
 <td style="text-align:right;">
-59
+2706
 </td>
 <td style="text-align:right;">
-NA
+1782
 </td>
 <td style="text-align:right;">
-NA
+900
 </td>
 <td style="text-align:right;">
-NA
+25582
 </td>
 <td style="text-align:right;">
-15
+106
 </td>
 <td style="text-align:right;">
-561
+2861
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-26.03.2020
+26.04.2020
 </td>
 <td style="text-align:right;">
-7286
+889742
 </td>
 <td style="text-align:right;">
-3629
+110130
 </td>
 <td style="text-align:right;">
-75
+2805
 </td>
 <td style="text-align:right;">
-NA
+1776
 </td>
 <td style="text-align:right;">
-NA
+883
 </td>
 <td style="text-align:right;">
-NA
+29140
 </td>
 <td style="text-align:right;">
-16
+99
 </td>
 <td style="text-align:right;">
-1196
+2357
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-27.03.2020
+27.04.2020
 </td>
 <td style="text-align:right;">
-47823
+918885
 </td>
 <td style="text-align:right;">
-5698
+112261
+</td>
+<td style="text-align:right;">
+2900
+</td>
+<td style="text-align:right;">
+1736
+</td>
+<td style="text-align:right;">
+882
+</td>
+<td style="text-align:right;">
+33791
+</td>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:right;">
+2131
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+28.04.2020
+</td>
+<td style="text-align:right;">
+948115
+</td>
+<td style="text-align:right;">
+114653
+</td>
+<td style="text-align:right;">
+2992
+</td>
+<td style="text-align:right;">
+1621
+</td>
+<td style="text-align:right;">
+845
+</td>
+<td style="text-align:right;">
+38809
 </td>
 <td style="text-align:right;">
 92
 </td>
 <td style="text-align:right;">
-344
-</td>
-<td style="text-align:right;">
-241
-</td>
-<td style="text-align:right;">
-42
-</td>
-<td style="text-align:right;">
-17
-</td>
-<td style="text-align:right;">
-2069
+2392
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-28.03.2020
+29.04.2020
 </td>
 <td style="text-align:right;">
-55464
+991613
 </td>
 <td style="text-align:right;">
-7402
+117589
 </td>
 <td style="text-align:right;">
-108
+3081
 </td>
 <td style="text-align:right;">
-445
+1574
 </td>
 <td style="text-align:right;">
-309
+831
 </td>
 <td style="text-align:right;">
-70
+44022
 </td>
 <td style="text-align:right;">
-16
+89
 </td>
 <td style="text-align:right;">
-1704
+2936
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-29.03.2020
+30.04.2020
 </td>
 <td style="text-align:right;">
-65446
+1033617
 </td>
 <td style="text-align:right;">
-9217
+120204
 </td>
 <td style="text-align:right;">
-131
+3174
 </td>
 <td style="text-align:right;">
-568
+1514
 </td>
 <td style="text-align:right;">
-394
+803
 </td>
 <td style="text-align:right;">
-105
+48886
 </td>
 <td style="text-align:right;">
-23
+93
 </td>
 <td style="text-align:right;">
-1815
+2615
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-30.03.2020
+01.05.2020
 </td>
 <td style="text-align:right;">
-76981
+1075048
 </td>
 <td style="text-align:right;">
-10827
+122392
 </td>
 <td style="text-align:right;">
-168
+3258
 </td>
 <td style="text-align:right;">
-725
+1480
 </td>
 <td style="text-align:right;">
-523
+818
 </td>
 <td style="text-align:right;">
-162
+53808
 </td>
 <td style="text-align:right;">
-37
+84
 </td>
 <td style="text-align:right;">
-1610
+2188
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-31.03.2020
+02.05.2020
 </td>
 <td style="text-align:right;">
-92403
+1111366
 </td>
 <td style="text-align:right;">
-13531
+124375
 </td>
 <td style="text-align:right;">
-214
+3336
 </td>
 <td style="text-align:right;">
-847
+1445
 </td>
 <td style="text-align:right;">
-622
+778
 </td>
 <td style="text-align:right;">
-243
+58259
 </td>
 <td style="text-align:right;">
-46
+78
 </td>
 <td style="text-align:right;">
-2704
+1983
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+03.05.2020
+</td>
+<td style="text-align:right;">
+1135367
+</td>
+<td style="text-align:right;">
+126045
+</td>
+<td style="text-align:right;">
+3397
+</td>
+<td style="text-align:right;">
+1424
+</td>
+<td style="text-align:right;">
+766
+</td>
+<td style="text-align:right;">
+63151
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+1670
 </td>
 </tr>
 </tbody>

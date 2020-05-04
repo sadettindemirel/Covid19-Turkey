@@ -100,64 +100,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-13.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-410556
-
-</td>
-
-<td style="text-align:right;">
-
-61049
-
-</td>
-
-<td style="text-align:right;">
-
-1296
-
-</td>
-
-<td style="text-align:right;">
-
-1786
-
-</td>
-
-<td style="text-align:right;">
-
-1063
-
-</td>
-
-<td style="text-align:right;">
-
-3957
-
-</td>
-
-<td style="text-align:right;">
-
-98
-
-</td>
-
-<td style="text-align:right;">
-
-4093
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 14.04.2020
 
 </td>
@@ -1251,6 +1193,64 @@ gunluk\_vaka
 <td style="text-align:right;">
 
 1983
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+03.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1135367
+
+</td>
+
+<td style="text-align:right;">
+
+126045
+
+</td>
+
+<td style="text-align:right;">
+
+3397
+
+</td>
+
+<td style="text-align:right;">
+
+1424
+
+</td>
+
+<td style="text-align:right;">
+
+766
+
+</td>
+
+<td style="text-align:right;">
+
+63151
+
+</td>
+
+<td style="text-align:right;">
+
+61
+
+</td>
+
+<td style="text-align:right;">
+
+1670
 
 </td>
 
