@@ -100,122 +100,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-16.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-518143
-
-</td>
-
-<td style="text-align:right;">
-
-74193
-
-</td>
-
-<td style="text-align:right;">
-
-1643
-
-</td>
-
-<td style="text-align:right;">
-
-1854
-
-</td>
-
-<td style="text-align:right;">
-
-1040
-
-</td>
-
-<td style="text-align:right;">
-
-7089
-
-</td>
-
-<td style="text-align:right;">
-
-125
-
-</td>
-
-<td style="text-align:right;">
-
-4801
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-17.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-558413
-
-</td>
-
-<td style="text-align:right;">
-
-78546
-
-</td>
-
-<td style="text-align:right;">
-
-1769
-
-</td>
-
-<td style="text-align:right;">
-
-1845
-
-</td>
-
-<td style="text-align:right;">
-
-1014
-
-</td>
-
-<td style="text-align:right;">
-
-8631
-
-</td>
-
-<td style="text-align:right;">
-
-126
-
-</td>
-
-<td style="text-align:right;">
-
-4353
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 18.04.2020
 
 </td>
@@ -1251,6 +1135,122 @@ gunluk\_vaka
 <td style="text-align:right;">
 
 1832
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+06.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1234724
+
+</td>
+
+<td style="text-align:right;">
+
+131744
+
+</td>
+
+<td style="text-align:right;">
+
+3584
+
+</td>
+
+<td style="text-align:right;">
+
+1278
+
+</td>
+
+<td style="text-align:right;">
+
+669
+
+</td>
+
+<td style="text-align:right;">
+
+78202
+
+</td>
+
+<td style="text-align:right;">
+
+64
+
+</td>
+
+<td style="text-align:right;">
+
+2253
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+07.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1265119
+
+</td>
+
+<td style="text-align:right;">
+
+133721
+
+</td>
+
+<td style="text-align:right;">
+
+3641
+
+</td>
+
+<td style="text-align:right;">
+
+1260
+
+</td>
+
+<td style="text-align:right;">
+
+665
+
+</td>
+
+<td style="text-align:right;">
+
+82984
+
+</td>
+
+<td style="text-align:right;">
+
+57
+
+</td>
+
+<td style="text-align:right;">
+
+1977
 
 </td>
 
