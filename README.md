@@ -100,122 +100,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-18.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-598933
-
-</td>
-
-<td style="text-align:right;">
-
-82329
-
-</td>
-
-<td style="text-align:right;">
-
-1890
-
-</td>
-
-<td style="text-align:right;">
-
-1894
-
-</td>
-
-<td style="text-align:right;">
-
-1054
-
-</td>
-
-<td style="text-align:right;">
-
-10453
-
-</td>
-
-<td style="text-align:right;">
-
-121
-
-</td>
-
-<td style="text-align:right;">
-
-3783
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-19.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-634277
-
-</td>
-
-<td style="text-align:right;">
-
-86306
-
-</td>
-
-<td style="text-align:right;">
-
-2017
-
-</td>
-
-<td style="text-align:right;">
-
-1922
-
-</td>
-
-<td style="text-align:right;">
-
-1031
-
-</td>
-
-<td style="text-align:right;">
-
-11976
-
-</td>
-
-<td style="text-align:right;">
-
-127
-
-</td>
-
-<td style="text-align:right;">
-
-3977
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 20.04.2020
 
 </td>
@@ -1251,6 +1135,122 @@ gunluk\_vaka
 <td style="text-align:right;">
 
 1977
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+08.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1298806
+
+</td>
+
+<td style="text-align:right;">
+
+135569
+
+</td>
+
+<td style="text-align:right;">
+
+3689
+
+</td>
+
+<td style="text-align:right;">
+
+1219
+
+</td>
+
+<td style="text-align:right;">
+
+653
+
+</td>
+
+<td style="text-align:right;">
+
+86396
+
+</td>
+
+<td style="text-align:right;">
+
+48
+
+</td>
+
+<td style="text-align:right;">
+
+1848
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+09.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1334411
+
+</td>
+
+<td style="text-align:right;">
+
+137115
+
+</td>
+
+<td style="text-align:right;">
+
+3739
+
+</td>
+
+<td style="text-align:right;">
+
+1168
+
+</td>
+
+<td style="text-align:right;">
+
+628
+
+</td>
+
+<td style="text-align:right;">
+
+89480
+
+</td>
+
+<td style="text-align:right;">
+
+50
+
+</td>
+
+<td style="text-align:right;">
+
+1546
 
 </td>
 
