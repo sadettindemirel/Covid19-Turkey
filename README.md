@@ -100,180 +100,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-30.04.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1033617
-
-</td>
-
-<td style="text-align:right;">
-
-120204
-
-</td>
-
-<td style="text-align:right;">
-
-3174
-
-</td>
-
-<td style="text-align:right;">
-
-1514
-
-</td>
-
-<td style="text-align:right;">
-
-803
-
-</td>
-
-<td style="text-align:right;">
-
-48886
-
-</td>
-
-<td style="text-align:right;">
-
-93
-
-</td>
-
-<td style="text-align:right;">
-
-2615
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-01.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1075048
-
-</td>
-
-<td style="text-align:right;">
-
-122392
-
-</td>
-
-<td style="text-align:right;">
-
-3258
-
-</td>
-
-<td style="text-align:right;">
-
-1480
-
-</td>
-
-<td style="text-align:right;">
-
-818
-
-</td>
-
-<td style="text-align:right;">
-
-53808
-
-</td>
-
-<td style="text-align:right;">
-
-84
-
-</td>
-
-<td style="text-align:right;">
-
-2188
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-02.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1111366
-
-</td>
-
-<td style="text-align:right;">
-
-124375
-
-</td>
-
-<td style="text-align:right;">
-
-3336
-
-</td>
-
-<td style="text-align:right;">
-
-1445
-
-</td>
-
-<td style="text-align:right;">
-
-778
-
-</td>
-
-<td style="text-align:right;">
-
-58259
-
-</td>
-
-<td style="text-align:right;">
-
-78
-
-</td>
-
-<td style="text-align:right;">
-
-1983
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 03.05.2020
 
 </td>
@@ -1251,6 +1077,180 @@ gunluk\_vaka
 <td style="text-align:right;">
 
 1022
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+20.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1696355
+
+</td>
+
+<td style="text-align:right;">
+
+152587
+
+</td>
+
+<td style="text-align:right;">
+
+4222
+
+</td>
+
+<td style="text-align:right;">
+
+877
+
+</td>
+
+<td style="text-align:right;">
+
+445
+
+</td>
+
+<td style="text-align:right;">
+
+113987
+
+</td>
+
+<td style="text-align:right;">
+
+23
+
+</td>
+
+<td style="text-align:right;">
+
+972
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+21.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1729988
+
+</td>
+
+<td style="text-align:right;">
+
+153548
+
+</td>
+
+<td style="text-align:right;">
+
+4249
+
+</td>
+
+<td style="text-align:right;">
+
+820
+
+</td>
+
+<td style="text-align:right;">
+
+424
+
+</td>
+
+<td style="text-align:right;">
+
+114990
+
+</td>
+
+<td style="text-align:right;">
+
+27
+
+</td>
+
+<td style="text-align:right;">
+
+961
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+22.05.2020
+
+</td>
+
+<td style="text-align:right;">
+
+1767495
+
+</td>
+
+<td style="text-align:right;">
+
+154500
+
+</td>
+
+<td style="text-align:right;">
+
+4276
+
+</td>
+
+<td style="text-align:right;">
+
+800
+
+</td>
+
+<td style="text-align:right;">
+
+401
+
+</td>
+
+<td style="text-align:right;">
+
+116111
+
+</td>
+
+<td style="text-align:right;">
+
+27
+
+</td>
+
+<td style="text-align:right;">
+
+952
 
 </td>
 
