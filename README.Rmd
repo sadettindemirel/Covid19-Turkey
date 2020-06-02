@@ -24,6 +24,7 @@ Sys.setlocale("LC_CTYPE", "turkish")
 #veriseti
 covid_19_tr <- readRDS("C:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds") %>%
   mutate(tarih1 = dmy(tarih)) 
+covid_19_en <- readRDS("C:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_en.rds")
 #font
 windowsFonts("Poppins" = windowsFont("Poppins"))
 extrafont::loadfonts(device = "win")
@@ -70,3 +71,10 @@ Aşağıdaki tablo verideki bazı değişkenleri ve son 20 günün verilerini g�
 ```{r echo=FALSE}
 kable(tail(covid_19_tr[,2:10],20))
 ```
+
+#### COVID-19 DATA IN ENGLISH
+
+```{r echo=FALSE}
+kable(tail(covid_19_en[,2:10],20))
+```
+

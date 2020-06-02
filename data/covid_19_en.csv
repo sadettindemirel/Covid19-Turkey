@@ -1,4 +1,4 @@
-100_vaka_sonrasi_gun,tarih,test,vaka,vefat,yogun_bakim_hasta,entube_hasta,iyilesme,gunluk_vefat,gunluk_vaka,gunluk_test,gunluk_vefat_eksi,gunluk_iyilesme
+day_no_after_100_cases,date,tests,cases,deaths,ic_patients,intubated_patients,recovered,daily_death,daily_case,daily_test,"daily_deaths_minus,daily_recovered",NA
 0,12.03.2020,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA
 0,13.03.2020,NA,5,NA,NA,NA,NA,NA,4,NA,NA,NA
 0,14.03.2020,NA,6,NA,NA,NA,NA,NA,1,NA,NA,NA

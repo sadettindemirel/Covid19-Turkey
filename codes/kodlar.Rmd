@@ -26,6 +26,11 @@ covid19_tr <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBbQFvV
 
 colnames(covid19_tr) <- c("100_vaka_sonrası_gun","tarih","test","vaka","vefat","yogun_bakim_hasta","entube_hasta","iyilesme","gunluk_vefat","gunluk_vaka","gunluk_test","gunluk_vefat_eksi","gunluk_iyilesme")
 
+covid19_en <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBbQFvVMsqdny_UE6piuPtZTpyFkDjaVyxdnEGnumxJwaPNQcMfaR_ajZjhaxMmaewnqR6To_E-OCw/pub?gid=1874023437&single=true&output=csv")
+
+colnames(covid19_en) <- c("day_no_after_100_cases","date","tests","cases","deaths","ic_patients","intubated_patients","recovered","daily_death","daily_case","daily_test","daily_deaths_minus,daily_recovered")
+
+
 head(covid19_tr)
 ```
 
@@ -37,11 +42,18 @@ Verileri **csv ve rds** formatında *data* klasöründen ulaşabilirsiniz.
 ```{r}
 saveRDS(covid19_tr, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.rds")
 write_csv(covid19_tr, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_tr.csv")
+
+saveRDS(covid19_en, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_en.rds")
+write_csv(covid19_en, "c:/Users/Sadettin/Rstats/covid19_turkey/data/covid_19_en.csv")
+
 ```
 
 ```{r}
 kable(tail(covid19_tr[,2:10],15))
 ```
 
+```{r}
+kable(tail(covid19_en[,2:10],15))
+```
 
 
