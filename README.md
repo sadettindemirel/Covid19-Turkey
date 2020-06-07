@@ -1,6 +1,8 @@
 COVID-19 Türkiye Verileri | COVID-19 Turkey Data
 ================
 
+**Veriseti Hakkında**
+
   - Covid19 verisi Sağlık Bakanlığının [Covid19 takip
     sayfasından](https://covid19.saglik.gov.tr/) alınmıştır.
   - Verilere data klasöründen **CSV ve RDS** formatlarında
@@ -12,6 +14,14 @@ COVID-19 Türkiye Verileri | COVID-19 Turkey Data
     oluşturulmuştur
   - Verisetinde kümülatif ve günlük vaka, vefat ve iyileşme sayılarının
     dahil olduğu 13 değişken yer almaktadır.
+
+**About Dataset**
+
+  - Covid-19 data is retrieved from Turkey’s Health Ministry [Covid-19
+    update page](https://covid19.saglik.gov.tr/) daily (bay hand)
+  - Please find the datasets in English and Turkish from Data folder
+  - Datasets contains cumulative and daily number of cases, deaths and
+    recoveries along with icu patients.
 
 <!-- end list -->
 
@@ -100,122 +110,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-16.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1589625
-
-</td>
-
-<td style="text-align:right;">
-
-148067
-
-</td>
-
-<td style="text-align:right;">
-
-4096
-
-</td>
-
-<td style="text-align:right;">
-
-906
-
-</td>
-
-<td style="text-align:right;">
-
-474
-
-</td>
-
-<td style="text-align:right;">
-
-108137
-
-</td>
-
-<td style="text-align:right;">
-
-41
-
-</td>
-
-<td style="text-align:right;">
-
-1610
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-17.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1624994
-
-</td>
-
-<td style="text-align:right;">
-
-149435
-
-</td>
-
-<td style="text-align:right;">
-
-4140
-
-</td>
-
-<td style="text-align:right;">
-
-914
-
-</td>
-
-<td style="text-align:right;">
-
-468
-
-</td>
-
-<td style="text-align:right;">
-
-109962
-
-</td>
-
-<td style="text-align:right;">
-
-44
-
-</td>
-
-<td style="text-align:right;">
-
-1368
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 18.05.2020
 
 </td>
@@ -1256,11 +1150,130 @@ gunluk\_vaka
 
 </tr>
 
+<tr>
+
+<td style="text-align:left;">
+
+05.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2267412
+
+</td>
+
+<td style="text-align:right;">
+
+168340
+
+</td>
+
+<td style="text-align:right;">
+
+4648
+
+</td>
+
+<td style="text-align:right;">
+
+592
+
+</td>
+
+<td style="text-align:right;">
+
+269
+
+</td>
+
+<td style="text-align:right;">
+
+133400
+
+</td>
+
+<td style="text-align:right;">
+
+18
+
+</td>
+
+<td style="text-align:right;">
+
+930
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+06.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2303258
+
+</td>
+
+<td style="text-align:right;">
+
+169218
+
+</td>
+
+<td style="text-align:right;">
+
+4669
+
+</td>
+
+<td style="text-align:right;">
+
+591
+
+</td>
+
+<td style="text-align:right;">
+
+264
+
+</td>
+
+<td style="text-align:right;">
+
+135322
+
+</td>
+
+<td style="text-align:right;">
+
+21
+
+</td>
+
+<td style="text-align:right;">
+
+878
+
+</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
 #### COVID-19 DATA IN ENGLISH
+
+Only the fraction of variables are viewed below. Find the rds or csv
+data file for details.
 
 <table>
 
@@ -1332,122 +1345,6 @@ daily\_case
 
 <td style="text-align:left;">
 
-16.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1589625
-
-</td>
-
-<td style="text-align:right;">
-
-148067
-
-</td>
-
-<td style="text-align:right;">
-
-4096
-
-</td>
-
-<td style="text-align:right;">
-
-906
-
-</td>
-
-<td style="text-align:right;">
-
-474
-
-</td>
-
-<td style="text-align:right;">
-
-108137
-
-</td>
-
-<td style="text-align:right;">
-
-41
-
-</td>
-
-<td style="text-align:right;">
-
-1610
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-17.05.2020
-
-</td>
-
-<td style="text-align:right;">
-
-1624994
-
-</td>
-
-<td style="text-align:right;">
-
-149435
-
-</td>
-
-<td style="text-align:right;">
-
-4140
-
-</td>
-
-<td style="text-align:right;">
-
-914
-
-</td>
-
-<td style="text-align:right;">
-
-468
-
-</td>
-
-<td style="text-align:right;">
-
-109962
-
-</td>
-
-<td style="text-align:right;">
-
-44
-
-</td>
-
-<td style="text-align:right;">
-
-1368
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 18.05.2020
 
 </td>
@@ -2483,6 +2380,122 @@ daily\_case
 <td style="text-align:right;">
 
 988
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+05.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2267412
+
+</td>
+
+<td style="text-align:right;">
+
+168340
+
+</td>
+
+<td style="text-align:right;">
+
+4648
+
+</td>
+
+<td style="text-align:right;">
+
+592
+
+</td>
+
+<td style="text-align:right;">
+
+269
+
+</td>
+
+<td style="text-align:right;">
+
+133400
+
+</td>
+
+<td style="text-align:right;">
+
+18
+
+</td>
+
+<td style="text-align:right;">
+
+930
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+06.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2303258
+
+</td>
+
+<td style="text-align:right;">
+
+169218
+
+</td>
+
+<td style="text-align:right;">
+
+4669
+
+</td>
+
+<td style="text-align:right;">
+
+591
+
+</td>
+
+<td style="text-align:right;">
+
+264
+
+</td>
+
+<td style="text-align:right;">
+
+135322
+
+</td>
+
+<td style="text-align:right;">
+
+21
+
+</td>
+
+<td style="text-align:right;">
+
+878
 
 </td>
 

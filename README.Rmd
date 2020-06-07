@@ -3,12 +3,19 @@ title: "COVID-19 Türkiye Verileri | COVID-19 Turkey Data"
 output: github_document
 ---
 
+**Veriseti Hakkında**
+
 * Covid19 verisi Sağlık Bakanlığının [Covid19 takip sayfasından](https://covid19.saglik.gov.tr/)  alınmıştır.
 * Verilere data klasöründen **CSV ve RDS** formatlarında ulaşabilirsiniz
 * Veriseti bünyesinde bulunduğum **[Veri Okuryazarlığı Derneği](https://twitter.com/voydorg)** tarafından derlenmiştir.
 * Ayrıca derlenen veri ile **[Koronavirüs Takip Sayfası](https://veribulteni.voyd.org.tr/koronavirus-takip/)** oluşturulmuştur
 * Verisetinde kümülatif ve günlük vaka, vefat ve iyileşme sayılarının dahil olduğu 13 değişken yer almaktadır.
 
+**About Dataset**
+
+* Covid-19 data is retrieved from Turkey's Health Ministry [Covid-19 update page](https://covid19.saglik.gov.tr/) daily (bay hand)
+* Please find the datasets in English and Turkish from Data folder
+* Datasets contains cumulative and daily number of cases, deaths and recoveries along with icu patients.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library("dplyr")
@@ -53,7 +60,7 @@ covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   gg
   geom_col()+
   scale_x_date(date_breaks = "5 days", date_labels = "%b %d")+
   scale_y_continuous(breaks = c(1,25,50,75,100,125))+
-  labs(title="Türkiye Genelinde Günlük Covid-19 Vefat Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()
+  labs(title="Türkiye Genelinde Günlük Covid-19 Vefat Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.7))
 ```
 
 #### 100 Vaka sonrası günlük vaka sayısı
@@ -61,7 +68,7 @@ covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   gg
 covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   ggplot(aes(tarih1, gunluk_vaka, fill ="#e34a33"))+
   geom_col()+
   scale_x_date(date_breaks = "5 days", date_labels = "%b %d")+
-  labs(title="Türkiye Genelinde Günlük Covid-19 Vaka Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()
+  labs(title="Türkiye Genelinde Günlük Covid-19 Vaka Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()+ theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.7))
 ```
 
 #### Vaka, Vefat ve İyileşme (Case, Death and Recovery)
@@ -73,6 +80,7 @@ kable(tail(covid_19_tr[,2:10],20))
 ```
 
 #### COVID-19 DATA IN ENGLISH
+Only the fraction of variables are viewed below. Find the rds or csv data file for details.
 
 ```{r echo=FALSE}
 kable(tail(covid_19_en[,2:10],20))
