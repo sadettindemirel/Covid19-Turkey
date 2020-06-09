@@ -18,7 +18,7 @@ COVID-19 Türkiye Verileri | COVID-19 Turkey Data
 **About Dataset**
 
   - Covid-19 data is retrieved from Turkey’s Health Ministry [Covid-19
-    update page](https://covid19.saglik.gov.tr/) daily (by hand)
+    update page](https://covid19.saglik.gov.tr/) daily (bay hand)
   - Please find the datasets in English and Turkish from Data folder
   - Datasets contains cumulative and daily number of cases, deaths and
     recoveries along with icu patients.

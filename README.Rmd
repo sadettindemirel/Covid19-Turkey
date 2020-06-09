@@ -13,7 +13,7 @@ output: github_document
 
 **About Dataset**
 
-* Covid-19 data is retrieved from Turkey's Health Ministry [Covid-19 update page](https://covid19.saglik.gov.tr/) daily (bay hand)
+* Covid-19 data is retrieved from Turkey's Health Ministry [Covid-19 update page](https://covid19.saglik.gov.tr/) daily (by hand)
 * Please find the datasets in English and Turkish from Data folder
 * Datasets contains cumulative and daily number of cases, deaths and recoveries along with icu patients.
 
