@@ -2,6 +2,7 @@
 title: "COVID-19 Türkiye Verileri | COVID-19 Turkey Data"
 output: github_document
 ---
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/deed.es)
 
 **Veriseti Hakkında**
 
@@ -14,7 +15,7 @@ output: github_document
 **About Dataset**
 
 * Covid-19 data is retrieved from Turkey's Health Ministry [Covid-19 update page](https://covid19.saglik.gov.tr/) daily (by hand)
-* Please find the datasets in English and Turkish from Data folder
+* Please find the datasets in English and Turkish from `Data` folder
 * Datasets contains cumulative and daily number of cases, deaths and recoveries along with icu patients.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -54,7 +55,22 @@ theme_custom2 <- function() {
 }
 ```
 
-#### 100 Vaka sonrası günlük vefat sayısı
+#### Vaka, Vefat ve İyileşme
+
+Aşağıdaki tablo verideki bazı değişkenleri ve son 5 günün verilerini göstermektedir. Daha detaylı veriler için data klasörüne bakınız.
+
+```{r echo=FALSE}
+kable(tail(covid_19_tr[,2:10],5))
+```
+
+#### Covid-19 cases, deaths and recoveries
+Only the fraction of variables and last five days' figures are shown below. Please find the data folder and `rds` or `csv` data file for more details.
+
+```{r echo=FALSE}
+kable(tail(covid_19_en[,2:10],5))
+```
+
+**100 Vaka sonrası günlük vefat sayısı - Daily number of deaths after 100th case**
 ```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
 covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   ggplot(aes(tarih1, gunluk_vefat))+
   geom_col()+
@@ -63,26 +79,12 @@ covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   gg
   labs(title="Türkiye Genelinde Günlük Covid-19 Vefat Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()+theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.7))
 ```
 
-#### 100 Vaka sonrası günlük vaka sayısı
+
+
+**100 Vaka sonrası günlük vaka sayısı - Daily number of cases after 100th case**
 ```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
 covid_19_tr %>% filter(`100_vaka_sonrasi_gun`> 0, !is.na(gunluk_vefat)) %>%   ggplot(aes(tarih1, gunluk_vaka, fill ="#e34a33"))+
   geom_col()+
   scale_x_date(date_breaks = "5 days", date_labels = "%b %d")+
   labs(title="Türkiye Genelinde Günlük Covid-19 Vaka Sayısı",x="",y="", caption = "Kaynak: Sağlık Bakanlığı")+theme_custom2()+ theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.7))
 ```
-
-#### Vaka, Vefat ve İyileşme (Case, Death and Recovery)
-
-Aşağıdaki tablo verideki bazı değişkenleri ve son 20 günün verilerini göstermektedir.
-
-```{r echo=FALSE}
-kable(tail(covid_19_tr[,2:10],20))
-```
-
-#### COVID-19 DATA IN ENGLISH
-Only the fraction of variables are viewed below. Find the rds or csv data file for details.
-
-```{r echo=FALSE}
-kable(tail(covid_19_en[,2:10],20))
-```
-
