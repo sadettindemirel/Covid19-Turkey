@@ -105,64 +105,6 @@ gunluk\_vaka
 
 <td style="text-align:left;">
 
-09.06.2020
-
-</td>
-
-<td style="text-align:right;">
-
-2415179
-
-</td>
-
-<td style="text-align:right;">
-
-172114
-
-</td>
-
-<td style="text-align:right;">
-
-4729
-
-</td>
-
-<td style="text-align:right;">
-
-642
-
-</td>
-
-<td style="text-align:right;">
-
-281
-
-</td>
-
-<td style="text-align:right;">
-
-144598
-
-</td>
-
-<td style="text-align:right;">
-
-18
-
-</td>
-
-<td style="text-align:right;">
-
-993
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 10.06.2020
 
 </td>
@@ -386,6 +328,64 @@ gunluk\_vaka
 <td style="text-align:right;">
 
 1459
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+14.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2632171
+
+</td>
+
+<td style="text-align:right;">
+
+178239
+
+</td>
+
+<td style="text-align:right;">
+
+4807
+
+</td>
+
+<td style="text-align:right;">
+
+717
+
+</td>
+
+<td style="text-align:right;">
+
+290
+
+</td>
+
+<td style="text-align:right;">
+
+151417
+
+</td>
+
+<td style="text-align:right;">
+
+15
+
+</td>
+
+<td style="text-align:right;">
+
+1562
 
 </td>
 
@@ -471,64 +471,6 @@ daily\_case
 
 <td style="text-align:left;">
 
-09.06.2020
-
-</td>
-
-<td style="text-align:right;">
-
-2415179
-
-</td>
-
-<td style="text-align:right;">
-
-172114
-
-</td>
-
-<td style="text-align:right;">
-
-4729
-
-</td>
-
-<td style="text-align:right;">
-
-642
-
-</td>
-
-<td style="text-align:right;">
-
-281
-
-</td>
-
-<td style="text-align:right;">
-
-144598
-
-</td>
-
-<td style="text-align:right;">
-
-18
-
-</td>
-
-<td style="text-align:right;">
-
-993
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
 10.06.2020
 
 </td>
@@ -752,6 +694,64 @@ daily\_case
 <td style="text-align:right;">
 
 1459
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+14.06.2020
+
+</td>
+
+<td style="text-align:right;">
+
+2632171
+
+</td>
+
+<td style="text-align:right;">
+
+178239
+
+</td>
+
+<td style="text-align:right;">
+
+4807
+
+</td>
+
+<td style="text-align:right;">
+
+717
+
+</td>
+
+<td style="text-align:right;">
+
+290
+
+</td>
+
+<td style="text-align:right;">
+
+151417
+
+</td>
+
+<td style="text-align:right;">
+
+15
+
+</td>
+
+<td style="text-align:right;">
+
+1562
 
 </td>
 
