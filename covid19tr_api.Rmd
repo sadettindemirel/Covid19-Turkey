@@ -1,0 +1,62 @@
+---
+title: "Sağlık Bakanlığı Covid-19 API"
+author: "Sadettin Demirel"
+date: "08/09/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(hablar)
+```
+
+
+#### Veriye Erişim
+
+```{r}
+api_data <- read_csv("https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.csv")
+api_data
+```
+
+```{r}
+names(api_data)
+```
+
+
+
+#### Veriyi Düzenle
+
+```{r}
+tidy_api_data <- api_data %>% mutate(date1 = dmy(date)) %>% select(-date, -pneumoniaPercent)
+tidy_api_data
+```
+
+* Değişken isimlerini değiştirelim
+
+```{r}
+sutun <-  c("gunluk_vaka","toplam_vaka","gunluk_olum","toplam_olum","gunluk_iyilesen","toplam_iyilesen","toplam_intube","yoğun_bakım_hasta","gunluk_test","toplam_test","agir_hasta","tarih")
+
+names(tidy_api_data) <- sutun
+tidy_api_data
+```
+
+```{r}
+names(tidy_api_data)
+```
+
+
+ * Doğru Sıralama
+ 
+```{r}
+covidtr_api_data <- tidy_api_data %>% select(tarih, gunluk_test, gunluk_vaka,gunluk_olum, gunluk_iyilesen,toplam_test,toplam_vaka,toplam_olum, toplam_iyilesen, yogun_bakim_hasta,toplam_intube,agir_hasta)
+
+covidtr_api_data
+```
+
+
+
+
+
+
+
