@@ -11,7 +11,7 @@ output: github_document
 En son veri girişi: https://covid19.saglik.gov.tr/covid19api?getir=sondurum
 tüm veriler : https://covid19.saglik.gov.tr/covid19api?getir=liste
 
-** Datasets**
+**Datasets**
 
 * The data retrieved from API service of Turkey's Ministry of Health
 
