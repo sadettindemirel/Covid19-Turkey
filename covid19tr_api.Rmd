@@ -8,7 +8,6 @@ output: html_document
 ```{r}
 library(tidyverse)
 library(lubridate)
-library(hablar)
 ```
 
 
@@ -30,6 +29,9 @@ names(api_data)
 ```{r}
 tidy_api_data <- api_data %>% mutate(date1 = dmy(date)) %>% select(-date, -pneumoniaPercent)
 tidy_api_data
+
+write_csv(tidy_api_data,"covid_api_data_en.csv")
+
 ```
 
 * Değişken isimlerini değiştirelim
@@ -54,6 +56,9 @@ covidtr_api_data <- tidy_api_data %>% select(tarih, gunluk_test, gunluk_vaka,gun
 covidtr_api_data
 ```
 
+```{r}
+write_csv(covidtr_api_data,"covid_api_data_tr.csv")
+```
 
 
 
