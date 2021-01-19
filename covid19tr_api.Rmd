@@ -37,7 +37,7 @@ write_csv(tidy_api_data,"covid_api_data_en.csv")
 * Değişken isimlerini değiştirelim
 
 ```{r}
-sutun <-  c("gunluk_vaka","toplam_vaka","gunluk_olum","toplam_olum","gunluk_iyilesen","toplam_iyilesen","toplam_intube","yoğun_bakım_hasta","gunluk_test","toplam_test","agir_hasta","tarih")
+sutun <-  c("gunluk_vaka","toplam_vaka","gunluk_olum","toplam_olum","gunluk_iyilesen","toplam_iyilesen","toplam_intube","yoğun_bakım_hasta","gunluk_test","toplam_test","agir_hasta","cases","tarih")
 
 names(tidy_api_data) <- sutun
 tidy_api_data
