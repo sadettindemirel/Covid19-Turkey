@@ -377,8 +377,8 @@ library(lubridate)</code></pre>
 <pre class="r"><code>api_data &lt;- read_csv(&quot;https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
-##   cases = col_double(),
-##   totalCases = col_double(),
+##   patients = col_double(),
+##   totalPatients = col_double(),
 ##   deaths = col_double(),
 ##   totalDeaths = col_double(),
 ##   recovered = col_double(),
@@ -389,60 +389,62 @@ library(lubridate)</code></pre>
 ##   totalTests = col_double(),
 ##   date = col_character(),
 ##   critical = col_double(),
-##   pneumoniaPercent = col_character()
+##   pneumoniaPercent = col_character(),
+##   cases = col_double()
 ## )</code></pre>
 <pre class="r"><code>api_data</code></pre>
-<pre><code>## # A tibble: 256 x 13
-##    cases totalCases deaths totalDeaths recovered totalRecovered totalIntubated
-##    &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;          &lt;dbl&gt;          &lt;dbl&gt;
-##  1     1          1      0           0         0              0              0
-##  2     0          1      0           0         0              0              0
-##  3     4          5      0           0         0              0              0
-##  4     1          6      0           0         0              0              0
-##  5    12         18      1           1         0              0              0
-##  6    29         47      0           1         0              0              0
-##  7    51         98      1           2         0              0              0
-##  8    93        191      2           3         0              0              0
-##  9   168        359      1           4         0              0              0
-## 10   311        670      5           9         0              0              0
-## # ... with 246 more rows, and 6 more variables: totalIntensiveCare &lt;dbl&gt;,
-## #   tests &lt;dbl&gt;, totalTests &lt;dbl&gt;, date &lt;chr&gt;, critical &lt;dbl&gt;,
-## #   pneumoniaPercent &lt;chr&gt;</code></pre>
+<pre><code>## # A tibble: 315 x 14
+##    patients totalPatients deaths totalDeaths recovered totalRecovered
+##       &lt;dbl&gt;         &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;          &lt;dbl&gt;
+##  1        1             1      0           0         0              0
+##  2        0             1      0           0         0              0
+##  3        4             5      0           0         0              0
+##  4        1             6      0           0         0              0
+##  5       12            18      1           1         0              0
+##  6       29            47      0           1         0              0
+##  7       51            98      1           2         0              0
+##  8       93           191      2           3         0              0
+##  9      168           359      1           4         0              0
+## 10      311           670      5           9         0              0
+## # ... with 305 more rows, and 8 more variables: totalIntubated &lt;dbl&gt;,
+## #   totalIntensiveCare &lt;dbl&gt;, tests &lt;dbl&gt;, totalTests &lt;dbl&gt;, date &lt;chr&gt;,
+## #   critical &lt;dbl&gt;, pneumoniaPercent &lt;chr&gt;, cases &lt;dbl&gt;</code></pre>
 <pre class="r"><code>names(api_data)</code></pre>
-<pre><code>##  [1] &quot;cases&quot;              &quot;totalCases&quot;         &quot;deaths&quot;            
+<pre><code>##  [1] &quot;patients&quot;           &quot;totalPatients&quot;      &quot;deaths&quot;            
 ##  [4] &quot;totalDeaths&quot;        &quot;recovered&quot;          &quot;totalRecovered&quot;    
 ##  [7] &quot;totalIntubated&quot;     &quot;totalIntensiveCare&quot; &quot;tests&quot;             
 ## [10] &quot;totalTests&quot;         &quot;date&quot;               &quot;critical&quot;          
-## [13] &quot;pneumoniaPercent&quot;</code></pre>
+## [13] &quot;pneumoniaPercent&quot;   &quot;cases&quot;</code></pre>
 </div>
 <div id="veriyi-düzenle" class="section level4">
 <h4>Veriyi Düzenle</h4>
 <pre class="r"><code>tidy_api_data &lt;- api_data %&gt;% mutate(date1 = dmy(date)) %&gt;% select(-date, -pneumoniaPercent)
 tidy_api_data</code></pre>
-<pre><code>## # A tibble: 256 x 12
-##    cases totalCases deaths totalDeaths recovered totalRecovered totalIntubated
-##    &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;          &lt;dbl&gt;          &lt;dbl&gt;
-##  1     1          1      0           0         0              0              0
-##  2     0          1      0           0         0              0              0
-##  3     4          5      0           0         0              0              0
-##  4     1          6      0           0         0              0              0
-##  5    12         18      1           1         0              0              0
-##  6    29         47      0           1         0              0              0
-##  7    51         98      1           2         0              0              0
-##  8    93        191      2           3         0              0              0
-##  9   168        359      1           4         0              0              0
-## 10   311        670      5           9         0              0              0
-## # ... with 246 more rows, and 5 more variables: totalIntensiveCare &lt;dbl&gt;,
-## #   tests &lt;dbl&gt;, totalTests &lt;dbl&gt;, critical &lt;dbl&gt;, date1 &lt;date&gt;</code></pre>
+<pre><code>## # A tibble: 315 x 13
+##    patients totalPatients deaths totalDeaths recovered totalRecovered
+##       &lt;dbl&gt;         &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;          &lt;dbl&gt;
+##  1        1             1      0           0         0              0
+##  2        0             1      0           0         0              0
+##  3        4             5      0           0         0              0
+##  4        1             6      0           0         0              0
+##  5       12            18      1           1         0              0
+##  6       29            47      0           1         0              0
+##  7       51            98      1           2         0              0
+##  8       93           191      2           3         0              0
+##  9      168           359      1           4         0              0
+## 10      311           670      5           9         0              0
+## # ... with 305 more rows, and 7 more variables: totalIntubated &lt;dbl&gt;,
+## #   totalIntensiveCare &lt;dbl&gt;, tests &lt;dbl&gt;, totalTests &lt;dbl&gt;, critical &lt;dbl&gt;,
+## #   cases &lt;dbl&gt;, date1 &lt;date&gt;</code></pre>
 <pre class="r"><code>write_csv(tidy_api_data,&quot;covid_api_data_en.csv&quot;)</code></pre>
 <ul>
 <li>Değişken isimlerini değiştirelim</li>
 </ul>
-<pre class="r"><code>sutun &lt;-  c(&quot;gunluk_vaka&quot;,&quot;toplam_vaka&quot;,&quot;gunluk_olum&quot;,&quot;toplam_olum&quot;,&quot;gunluk_iyilesen&quot;,&quot;toplam_iyilesen&quot;,&quot;toplam_intube&quot;,&quot;yoğun_bakım_hasta&quot;,&quot;gunluk_test&quot;,&quot;toplam_test&quot;,&quot;agir_hasta&quot;,&quot;tarih&quot;)
+<pre class="r"><code>sutun &lt;-  c(&quot;gunluk_vaka&quot;,&quot;toplam_vaka&quot;,&quot;gunluk_olum&quot;,&quot;toplam_olum&quot;,&quot;gunluk_iyilesen&quot;,&quot;toplam_iyilesen&quot;,&quot;toplam_intube&quot;,&quot;yoğun_bakım_hasta&quot;,&quot;gunluk_test&quot;,&quot;toplam_test&quot;,&quot;agir_hasta&quot;,&quot;cases&quot;,&quot;tarih&quot;)
 
 names(tidy_api_data) &lt;- sutun
 tidy_api_data</code></pre>
-<pre><code>## # A tibble: 256 x 12
+<pre><code>## # A tibble: 315 x 13
 ##    gunluk_vaka toplam_vaka gunluk_olum toplam_olum gunluk_iyilesen
 ##          &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;           &lt;dbl&gt;
 ##  1           1           1           0           0               0
@@ -455,21 +457,22 @@ tidy_api_data</code></pre>
 ##  8          93         191           2           3               0
 ##  9         168         359           1           4               0
 ## 10         311         670           5           9               0
-## # ... with 246 more rows, and 7 more variables: toplam_iyilesen &lt;dbl&gt;,
+## # ... with 305 more rows, and 8 more variables: toplam_iyilesen &lt;dbl&gt;,
 ## #   toplam_intube &lt;dbl&gt;, yogun_bakim_hasta &lt;dbl&gt;, gunluk_test &lt;dbl&gt;,
-## #   toplam_test &lt;dbl&gt;, agir_hasta &lt;dbl&gt;, tarih &lt;date&gt;</code></pre>
+## #   toplam_test &lt;dbl&gt;, agir_hasta &lt;dbl&gt;, cases &lt;dbl&gt;, tarih &lt;date&gt;</code></pre>
 <pre class="r"><code>names(tidy_api_data)</code></pre>
 <pre><code>##  [1] &quot;gunluk_vaka&quot;       &quot;toplam_vaka&quot;       &quot;gunluk_olum&quot;      
 ##  [4] &quot;toplam_olum&quot;       &quot;gunluk_iyilesen&quot;   &quot;toplam_iyilesen&quot;  
 ##  [7] &quot;toplam_intube&quot;     &quot;yogun_bakim_hasta&quot; &quot;gunluk_test&quot;      
-## [10] &quot;toplam_test&quot;       &quot;agir_hasta&quot;        &quot;tarih&quot;</code></pre>
+## [10] &quot;toplam_test&quot;       &quot;agir_hasta&quot;        &quot;cases&quot;            
+## [13] &quot;tarih&quot;</code></pre>
 <ul>
 <li>Doğru Sıralama</li>
 </ul>
 <pre class="r"><code>covidtr_api_data &lt;- tidy_api_data %&gt;% select(tarih, gunluk_test, gunluk_vaka,gunluk_olum, gunluk_iyilesen,toplam_test,toplam_vaka,toplam_olum, toplam_iyilesen, yogun_bakim_hasta,toplam_intube,agir_hasta)
 
 covidtr_api_data</code></pre>
-<pre><code>## # A tibble: 256 x 12
+<pre><code>## # A tibble: 315 x 12
 ##    tarih      gunluk_test gunluk_vaka gunluk_olum gunluk_iyilesen toplam_test
 ##    &lt;date&gt;           &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;           &lt;dbl&gt;       &lt;dbl&gt;
 ##  1 2020-03-11           0           1           0               0           0
@@ -482,7 +485,7 @@ covidtr_api_data</code></pre>
 ##  8 2020-03-18        2015          93           2               0       10017
 ##  9 2020-03-19        1981         168           1               0       11998
 ## 10 2020-03-20        3656         311           5               0       15624
-## # ... with 246 more rows, and 6 more variables: toplam_vaka &lt;dbl&gt;,
+## # ... with 305 more rows, and 6 more variables: toplam_vaka &lt;dbl&gt;,
 ## #   toplam_olum &lt;dbl&gt;, toplam_iyilesen &lt;dbl&gt;, yogun_bakim_hasta &lt;dbl&gt;,
 ## #   toplam_intube &lt;dbl&gt;, agir_hasta &lt;dbl&gt;</code></pre>
 <pre class="r"><code>write_csv(covidtr_api_data,&quot;covid_api_data_tr.csv&quot;)</code></pre>
