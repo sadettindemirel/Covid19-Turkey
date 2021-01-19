@@ -1,8 +1,13 @@
 COVID-19 Türkiye Verileri | COVID-19 Turkey Data
 ================
+
 [![License: CC
 BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/deed.es)
 
-[Veriler Ozan Ertürk'ün Covid-19 GitHub Reposundan Alınmıştır](https://github.com/ozanerturk/covid19-turkey-api). Sadece verideki değişken isimleri değiştirilmiştir. Daha fazla bilgi ve detay için asıl kaynağa gidiniz.
+[Veriler Ozan Ertürk’ün Covid-19 GitHub Reposundan
+Alınmıştır](https://github.com/ozanerturk/covid19-turkey-api).
+Sadece verideki değişken isimleri değiştirilmiştir. Daha fazla bilgi ve
+detay için asıl kaynağa gidiniz.
 
-[The data retrieved from GitHub Repo of Ozan Ertürk](https://github.com/ozanerturk/covid19-turkey-api)
+[The data retrieved from GitHub Repo of Ozan
+Ertürk](https://github.com/ozanerturk/covid19-turkey-api)
